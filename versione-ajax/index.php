@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Dischi Musicali</title>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
         <link rel="stylesheet" href="public/css/app.css">
     </head>
     <body>
@@ -43,6 +44,16 @@
         <main>
             <div class="records-wrapper container"></div>
         </main>
+
+        <script id="record-card" type="text/x-handlebars-template">
+            <div class="record active">
+                <img class="cover" src="{{poster}}" alt="">
+                <h2 class="title">{{title}}</h2>
+                <div class="author">{{author}}</div>
+                <div class="genre">{{genre}}</div>
+                <div class="year">{{year}}</div>
+            </div>
+        </script>
 
         <script src="public/js/app.js" charset="UTF-8"></script>
     </body>
