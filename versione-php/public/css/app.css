@@ -386,10 +386,6 @@ template {
   margin: 0 auto;
 }
 
-.active {
-  display: flex;
-}
-
 .cover {
   margin-bottom: 20px;
   height: 226px;
@@ -426,7 +422,7 @@ body label {
   margin: 0 10px;
 }
 
-.record-wrapper {
+.records-wrapper {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -434,7 +430,7 @@ body label {
   padding: 100px 0;
 }
 
-.record-wrapper .record {
+.record {
   display: none;
   justify-content: flex-start;
   align-items: center;
@@ -448,9 +444,13 @@ body label {
   width: 25%;
 }
 
-.record-wrapper .record img {
-  margin-bottom: 20px;
-  height: 226px;
+.record.active {
+  display: flex;
+}
+
+.record .title {
+  margin-top: 0;
+  font-size: 20px;
 }
 
 .title,
@@ -464,6 +464,6 @@ body label {
 .genre,
 .year {
   font-style: italic;
-  font-size: 14px;
+  font-size: 16px;
 }
 
