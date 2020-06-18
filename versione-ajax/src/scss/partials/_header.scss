@@ -1,0 +1,28 @@
+body {
+    background: $bg_body;
+    min-height: 100vh;
+    font-size: $base_fontsize;
+    font-family: $base_fontfam;
+
+    header {
+        background: $bg_header;
+        position: fixed;
+        width: 100%;
+    }
+
+    form {
+        @include flex(flex, center, center);
+        flex-wrap: wrap;
+        height: 50px;
+    }
+
+    label,
+    select {
+        margin: $base_margin;
+    }
+
+    label {
+        color: $base_color;
+        margin: $base_margin;
+    }
+}

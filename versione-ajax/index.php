@@ -1,4 +1,3 @@
-<?php require 'public/php/dischi.php'; ?>
 <!DOCTYPE html>
 <html lang="en">
     <head>
@@ -40,28 +39,7 @@
         </header>
         
         <main>
-            <div class="records-wrapper container">
-                <?php 
-                    foreach($dischi as $disco) { ?>
-                        <div class="record active">
-                            <img class="cover" src="<?php echo $disco['poster']?>" alt="">
-                            <h2 class="title">
-                                <?php echo $disco['title']?>
-                            </h2>
-                            <div class="author">
-                                <?php echo $disco['author']?>
-                            </div>
-                            <div class="genre">
-                                <?php echo $disco['genre']?>
-                            </div>
-                            <div class="year">
-                                <?php echo$disco['year']?>
-                            </div>
-                        </div>
-                        <?php
-                    }
-                ?>
-            </div>
+            <div class="records-wrapper container"></div>
         </main>
 
         <script src="public/js/app.js" charset="UTF-8"></script>
