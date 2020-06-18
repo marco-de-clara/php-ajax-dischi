@@ -14,6 +14,7 @@
                 <form>
                     <label for="genre">Choose a genre:</label>
                     <select name="genre" id="genre">
+                        <option value="">-- select a genre --</option>
                         <option value="all">All</option>
                         <option value="pop">Pop</option>
                         <option value="rock">Rock</option>
@@ -22,7 +23,8 @@
                     </select>
 
                     <label for="artist">Choose an artist:</label>
-                    <select name="genre" id="artist">
+                    <select name="artist" id="artist">
+                        <option value="">-- select an artist --</option>
                         <option value="all">All</option>
                         <option value="bon jovi">Bon Jovi</option>
                         <option value="dave weckl">Dave Weckl</option>
